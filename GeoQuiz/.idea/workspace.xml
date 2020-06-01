@@ -42,7 +42,7 @@
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1cbun0Gzfzcl0c6kxxvROYCDg8d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -63,8 +63,9 @@
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1590809859453" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -139,6 +140,12 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="2505" y="215" width="800" height="684" key="#Notifications" timestamp="1590814965741">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -168,10 +175,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1407" height="639" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590815266888" />
-    <state x="2399" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1590995983839">
+    <state x="2399" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1591021672078">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2399" y="188" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590995983839" />
+    <state x="2399" y="188" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591021672078" />
     <state width="816" height="1078" key="com.android.tools.idea.apk.viewer.dex.ShowDisassemblyAction" timestamp="1590812718324">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -180,9 +187,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2080" y="127" width="1660" height="853" key="com.android.tools.idea.avdmanager.AvdListDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590815084472" />
-    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1590995944275">
+    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1591021649183">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590995944275" />
+    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591021649183" />
   </component>
 </project>
