@@ -16,6 +16,7 @@ public class QuizActivity extends AppCompatActivity {
     private Button mTrueButton;
     private Button mFalseButton;
     private Button mNextButton;
+    private Button mPreviousButton;
     private TextView mQuestionTextView;
     private TextView mProgressTextView;
 
@@ -39,6 +40,8 @@ public class QuizActivity extends AppCompatActivity {
         View trueButtonView = findViewById(R.id.true_button);
         View falseButtonView = findViewById(R.id.false_button);
         View nextButtonView = findViewById(R.id.next_button);
+        View previousButton = findViewById(R.id.previous_button);
+
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mProgressTextView = (TextView) findViewById(R.id.progress_text_view);
@@ -46,6 +49,7 @@ public class QuizActivity extends AppCompatActivity {
         mTrueButton = (Button) trueButtonView;
         mFalseButton = (Button) falseButtonView;
         mNextButton = (Button) nextButtonView;
+        mPreviousButton = (Button) previousButton;
 
         updateQuestion();
 
@@ -72,12 +76,25 @@ public class QuizActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+        mPreviousButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mCurrentIndex == 0){
+                    mCurrentIndex = mQuestionBank.length - 1;
+                }else mCurrentIndex--;
+                System.out.println();
+                updateQuestion();
+            }
+        });
+
     }
 
     private void updateQuestion(){
         int question = mQuestionBank[mCurrentIndex].getmTextResId();
         mQuestionTextView.setText(question);
-        mProgressTextView.setText(String.valueOf(mCurrentIndex + 1) + "/" + mQuestionBank.length + "/" + mCorrectAnswer);
+        String status = String.valueOf(mCurrentIndex + 1) + "/" + mQuestionBank.length + "/" + mCorrectAnswer;
+        mProgressTextView.setText(status);
     }
 
     private void nextQuestion(){
