@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,8 @@ public class QuizActivity extends AppCompatActivity {
     private Button mFalseButton;
     private Button mNextButton;
     private Button mPreviousButton;
+    private ImageButton mPreviousImageButton;
+
     private TextView mQuestionTextView;
     private TextView mProgressTextView;
 
@@ -42,6 +45,7 @@ public class QuizActivity extends AppCompatActivity {
         View nextButtonView = findViewById(R.id.next_button);
         View previousButton = findViewById(R.id.previous_button);
 
+        View previousImageButton = findViewById(R.id.previous_image_button);
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mProgressTextView = (TextView) findViewById(R.id.progress_text_view);
@@ -50,6 +54,8 @@ public class QuizActivity extends AppCompatActivity {
         mFalseButton = (Button) falseButtonView;
         mNextButton = (Button) nextButtonView;
         mPreviousButton = (Button) previousButton;
+
+        mPreviousImageButton = (ImageButton) previousImageButton;
 
         updateQuestion();
 
@@ -88,6 +94,16 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+        mPreviousImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mCurrentIndex == 0){
+                    mCurrentIndex = mQuestionBank.length - 1;
+                }else mCurrentIndex--;
+                System.out.println();
+                updateQuestion();
+            }
+        });
     }
 
     private void updateQuestion(){

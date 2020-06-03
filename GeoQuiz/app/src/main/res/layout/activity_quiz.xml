@@ -56,6 +56,26 @@
             android:layout_height="wrap_content"
             android:drawableRight="@drawable/arrow_right"
             android:drawablePadding="4dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/next_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/arrow_right"
+            android:drawablePadding="24dp" />
+
+        <ImageButton
+            android:id="@+id/previous_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/arrow_left"
+            android:drawablePadding="24dp" />
 
     </LinearLayout>
 
