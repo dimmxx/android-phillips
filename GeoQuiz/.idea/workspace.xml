@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="QuizActivity" />
+        <option name="name" value="QuizActivity" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="QuizActivity" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c9e394-81be-4724-97eb-7561a80d4d00" name="Default Changelist" comment="" />
@@ -63,9 +75,14 @@
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout-land" />
     <property name="memory.settings.postsync.last.time.stamp" value="1590809859453" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout-land" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -151,10 +168,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2505" y="215" width="800" height="684" key="#Notifications/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590814965741" />
-    <state x="2718" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1590903609292">
+    <state x="2718" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1591274523606">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2718" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590903609292" />
+    <state x="2718" y="272" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591274523606" />
+    <state x="2053" y="54" width="1588" height="870" key="AndroidCreateResourceDirectoryDialog" timestamp="1591272518671">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2053" y="54" width="1588" height="870" key="AndroidCreateResourceDirectoryDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591272518671" />
     <state x="2744" y="289" width="452" height="550" key="FileChooserDialogImpl" timestamp="1591001956521">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -203,9 +224,13 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2080" y="127" width="1660" height="853" key="com.android.tools.idea.avdmanager.AvdListDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1590815084472" />
-    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1591195462535">
+    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1591264390097">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591195462535" />
+    <state x="2566" y="381" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591264390097" />
+    <state x="2643" y="397" width="523" height="319" key="edit.logcat.filter.dialog.dimensions" timestamp="1591269841084">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2643" y="397" width="523" height="319" key="edit.logcat.filter.dialog.dimensions/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591269841084" />
   </component>
 </project>
