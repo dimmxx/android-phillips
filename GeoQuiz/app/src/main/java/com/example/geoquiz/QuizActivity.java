@@ -18,6 +18,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private static final String TAG = "QuizActivity";
     private static final String KEY_INDEX = "index";
+    private static final String KEY_ANSWER = "answer";
 
     private Button mTrueButton;
     private Button mFalseButton;
@@ -26,6 +27,7 @@ public class QuizActivity extends AppCompatActivity {
     private ImageButton mPreviousImageButton;
 
     private int mCurrentIndex;
+    private int mCorrectAnswer;
 
     private TextView mQuestionTextView;
     private TextView mProgressTextView;
@@ -39,13 +41,6 @@ public class QuizActivity extends AppCompatActivity {
             new Question(R.string.question_asia, true),
     };
 
-
-
-
-
-
-    private int mCorrectAnswer = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +49,7 @@ public class QuizActivity extends AppCompatActivity {
 
     if(savedInstanceState != null){
         mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+        mCorrectAnswer = savedInstanceState.getInt(KEY_ANSWER,0);
     }
 
 
@@ -184,5 +180,6 @@ public class QuizActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "inSaveInstanceState");
         outState.putInt(KEY_INDEX, mCurrentIndex);
+        outState.putInt(KEY_ANSWER, mCorrectAnswer);
     }
 }
