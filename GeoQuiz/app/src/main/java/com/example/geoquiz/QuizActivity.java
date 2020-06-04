@@ -25,6 +25,7 @@ public class QuizActivity extends AppCompatActivity {
     private Button mNextButton;
     private Button mPreviousButton;
     private ImageButton mPreviousImageButton;
+    private ImageButton mNextImageButton;
 
     private int mCurrentIndex;
     private int mCorrectAnswer;
@@ -52,13 +53,13 @@ public class QuizActivity extends AppCompatActivity {
         mCorrectAnswer = savedInstanceState.getInt(KEY_ANSWER,0);
     }
 
-
         View trueButtonView = findViewById(R.id.true_button);
         View falseButtonView = findViewById(R.id.false_button);
         View nextButtonView = findViewById(R.id.next_button);
         View previousButton = findViewById(R.id.previous_button);
 
         View previousImageButton = findViewById(R.id.previous_image_button);
+        View nextImageButton = findViewById(R.id.next_image_button);
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mProgressTextView = (TextView) findViewById(R.id.progress_text_view);
@@ -69,6 +70,7 @@ public class QuizActivity extends AppCompatActivity {
         mPreviousButton = (Button) previousButton;
 
         mPreviousImageButton = (ImageButton) previousImageButton;
+        mNextImageButton = (ImageButton) nextImageButton;
 
         updateQuestion();
 
@@ -114,6 +116,14 @@ public class QuizActivity extends AppCompatActivity {
                     mCurrentIndex = mQuestionBank.length - 1;
                 }else mCurrentIndex--;
                 System.out.println();
+                updateQuestion();
+            }
+        });
+
+        mNextImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
             }
         });

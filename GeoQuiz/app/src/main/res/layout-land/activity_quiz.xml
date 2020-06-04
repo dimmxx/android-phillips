@@ -42,7 +42,6 @@
         android:orientation="horizontal"
         android:layout_gravity="bottom">
 
-
         <Button
             android:id="@+id/previous_button"
             android:layout_width="wrap_content"
@@ -59,7 +58,6 @@
             android:drawableRight="@drawable/arrow_right"
             android:drawablePadding="4dp" />
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
